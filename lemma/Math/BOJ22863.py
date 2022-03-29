@@ -5,7 +5,7 @@ A, B, C, M = map(int, sys.stdin.readline().split())
 # if A >= M:
 #     work_time = 0
 # else:
-#     work_time = int((M + 24 * C) / (A + C))
+#     work_time = int((M + 24 * C) / (A + C))  # A*work_time - (24-work_time)*C = M
 #
 # print(work_time * B)
 
