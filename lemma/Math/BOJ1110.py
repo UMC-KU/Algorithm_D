@@ -1,3 +1,5 @@
+# 더하기 사이클
+
 num = input()
 
 if len(num) == 1:

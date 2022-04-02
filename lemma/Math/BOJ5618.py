@@ -1,3 +1,5 @@
+# 공약수
+
 import sys
 from math import gcd
 

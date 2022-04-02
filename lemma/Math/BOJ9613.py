@@ -1,3 +1,5 @@
+# GCD 합
+
 import sys
 from math import gcd
 

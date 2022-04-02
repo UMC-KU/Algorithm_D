@@ -1,3 +1,5 @@
+# 소수 최소 공배수
+
 import sys
 from math import sqrt
 from math import lcm

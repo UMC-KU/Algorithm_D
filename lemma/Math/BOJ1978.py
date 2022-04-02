@@ -1,3 +1,5 @@
+# 소수 찾기
+
 import sys
 from math import sqrt
 

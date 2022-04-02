@@ -1,3 +1,5 @@
+# 서로소 평균
+
 import sys
 from math import gcd
 

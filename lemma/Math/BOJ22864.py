@@ -1,3 +1,5 @@
+# 피로도
+
 import sys
 
 A, B, C, M = map(int, sys.stdin.readline().split())
