@@ -1,3 +1,5 @@
+# LCM
+
 import sys
 from math import lcm
 

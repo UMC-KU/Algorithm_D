@@ -1,3 +1,5 @@
+# 소수인팰린드롬
+
 import sys
 from math import sqrt
 

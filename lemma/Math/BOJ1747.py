@@ -1,3 +1,5 @@
+# 소수&팰린드롬
+
 from math import sqrt
 
 

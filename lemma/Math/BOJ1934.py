@@ -1,3 +1,5 @@
+# 최소공배수
+
 import sys
 from math import lcm
 

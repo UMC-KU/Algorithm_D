@@ -1,3 +1,5 @@
+# 소수
+
 from math import sqrt
 
 # M 이상 N 이하의 자연수

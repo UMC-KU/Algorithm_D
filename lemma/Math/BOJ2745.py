@@ -1,3 +1,5 @@
+# 진법 변환
+
 N, B = input().split(" ")  # B진법 수 N
 
 numbers = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"

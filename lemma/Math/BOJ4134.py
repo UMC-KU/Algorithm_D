@@ -1,3 +1,5 @@
+# 다음 소수
+
 from math import sqrt
 
 
