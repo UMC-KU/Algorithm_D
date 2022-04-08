@@ -1,0 +1,21 @@
+--유클리드 호제법--
+HCF)))))     a>b일 때, a와 b의 HCF는 b와 b%a의 HCF와 같다
+LCM)))))     a와 b의 LCM은 a*b/HCF와 같다
+
+재귀호출 -->
+	public static int HCF(int n1, int n2) {
+		if(n2 == 0) return n1;
+		else return HCF(n2, n1%n2);
+	}
+
+루프문
+	while(true){
+		if(n2 == 0){
+			hcf = n1; 
+			break;
+		} else {
+			int temp = n1;
+			n1 = n2;
+			n2 = temp%n2;
+		}
+	}
