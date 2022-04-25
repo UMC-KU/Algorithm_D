@@ -32,8 +32,7 @@ for _ in range(N):
 for _ in range(M):
     M_set.add(input())
 
-result = N_set.intersection(M_set)
-result = list(result)
+result = list(N_set.intersection(M_set))
 result.sort()
 
 print(len(result))
