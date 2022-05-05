@@ -4,10 +4,10 @@ import sys
 from collections import deque
 
 N = int(sys.stdin.readline())
-kards = deque([num for num in range(1, N + 1)])
+cards = deque([num for num in range(1, N + 1)])
 
-while len(kards) != 1:
-    kards.popleft()
-    kards.append(kards.popleft())
+while len(cards) != 1:
+    cards.popleft()
+    cards.append(cards.popleft())
 
-print(kards[0])
+print(cards[0])
