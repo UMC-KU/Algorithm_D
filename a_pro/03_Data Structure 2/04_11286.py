@@ -32,3 +32,5 @@ for _ in range(n):
                 heapq.heappush(heap, i)
         else:
             print(0)
+
+# 절댓값 힙, 음수 힙으로 구현. 절댓값 힙은 최대 힙처럼 사용해서 해보기.

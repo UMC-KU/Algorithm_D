@@ -1,5 +1,5 @@
 # 리스트 이용해 푼 문제
-"""
+
 import sys
 n, m = map(int, sys.stdin.readline().split())
 book = []
@@ -32,3 +32,4 @@ for i in range(m):
 
     else:
         print(book[question] + 1)
+"""
