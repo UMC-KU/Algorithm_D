@@ -4,6 +4,12 @@
 import sys
 import heapq
 
+
+def sync(heap):
+    while heap and visited[heap[0][1]]:
+        heapq.heappop(heap)
+
+
 T = int(sys.stdin.readline().strip())
 result = []
 
@@ -24,25 +30,21 @@ for _ in range(T):
         else:  # inst == 'D' : 정수 삭제
             if len(min_heap) != 0:
                 if num == 1:  # 최댓값 삭제
-                    while max_heap and visited[max_heap[0][1]]:
-                        heapq.heappop(max_heap)
+                    sync(max_heap)
                     if max_heap:
                         max_value = heapq.heappop(max_heap)
                         visited[max_value[1]] = True
                     # min_heap.remove(heapq.heappop(max_heap)[1])
 
                 elif num == -1:  # 최솟값 삭제
-                    while min_heap and visited[min_heap[0][1]]:
-                        heapq.heappop(min_heap)
+                    sync(min_heap)
                     if min_heap:
                         min_value = heapq.heappop(min_heap)
                         visited[min_value[1]] = True
                     # max_heap.remove((-min_value, min_value))
 
-    while max_heap and visited[max_heap[0][1]]:
-        heapq.heappop(max_heap)
-    while min_heap and visited[min_heap[0][1]]:
-        heapq.heappop(min_heap)
+    sync(max_heap)
+    sync(min_heap)
 
     if len(min_heap) == 0:
         result.append("EMPTY")
