@@ -59,11 +59,11 @@ for i in range(1, N):
     now_tower = tower[i]
 
     if stack[len(stack) - 1][0] >= now_tower[0]:  # stack top h >= 현재 보는 h
-        result.append(stack[len(stack) - 1][1])
+        result.append(stack[-1][1])
         stack.append(now_tower)
 
     else:  # stack top h < 현재 보는 h
-        while stack[len(stack) - 1][0] < now_tower[0]:  # stack top h >= 현재 보는 h가 될 때까지
+        while stack[-1][0] < now_tower[0]:  # stack top h >= 현재 보는 h가 될 때까지
             stack.pop()
             if len(stack) == 0:
                 break
@@ -71,7 +71,7 @@ for i in range(1, N):
         if len(stack) == 0:
             result.append(0)
         else:
-            result.append(stack[len(stack) - 1][1])
+            result.append(stack[-1][1])
         stack.append(now_tower)
 
 for r in result:
