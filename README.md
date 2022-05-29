@@ -15,7 +15,7 @@
 | 2주차 | 2022.04.08 | String |
 | 3주차 | 2022.05.05 | Data Structure |
 | 4주차 | 2022.05.13 | Data Structure 2 |
-| 5주차 |  | Brute Force |
+| 5주차 | 2022.05.27 | Brute Force |
 | 6주차 |  | Implementation |
 | 7주차 |  | Simulation |
 | 8주차 |  | Tree |
