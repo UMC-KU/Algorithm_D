@@ -48,7 +48,7 @@ for _ in range(T):
     if d < 0:
         d = 360 - (abs(d) % 360)
     else:
-        d = d % 360
+        d %= 360
 
     if d == 0:
         result.append(arr)
