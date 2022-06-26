@@ -28,7 +28,7 @@ def rotate(n, d, arr):
     for i in range(n):
         arr_rotated[i][i] = arr[half][i]
 
-    d = d - 45
+    d -= 45
     if d == 0:
         result.append(arr_rotated)
         return
@@ -45,10 +45,7 @@ for _ in range(T):
     for _ in range(n):
         arr.append(list(map(int, sys.stdin.readline().split())))
 
-    if d < 0:
-        d = 360 - (abs(d) % 360)
-    else:
-        d %= 360
+    d %= 360  # d가 음수일 경우 & 양수일 경우를 나누지 않아도 됨!
 
     if d == 0:
         result.append(arr)

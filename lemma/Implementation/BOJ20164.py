@@ -15,22 +15,21 @@ def count_odd(N):
 def func(N, oddNum):
     global max_result, min_result
 
-    if len(N) >= 3:
-        oddNum += count_odd(N)
+    oddNum += count_odd(N)  # 홀수의 개수 더하기
 
-        # decompose N
+    if len(N) >= 3:
+        # decompose N into 3 pieces
+        # 임의의 위치 인덱스 i, j
         for i in range(1, len(N) - 1):
             for j in range(i + 1, len(N)):
                 temp = str(int(N[:i]) + int(N[i:j]) + int(N[j:]))
                 func(temp, oddNum)
 
     elif len(N) == 2:
-        oddNum += count_odd(N)
         temp = str(int(N[0]) + int(N[1]))
         func(temp, oddNum)
 
     else:
-        oddNum += count_odd(N)
         max_result = max(max_result, oddNum)
         min_result = min(min_result, oddNum)
         return
