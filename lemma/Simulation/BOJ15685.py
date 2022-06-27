@@ -1,4 +1,4 @@
-# 드래곤 커브
+# 드래곤 커브 (solution 1)
 
 import sys
 
@@ -15,10 +15,10 @@ for _ in range(101):
 direction = [(0, 1), (-1, 0), (0, -1), (1, 0)]  # 시작 방향
 rotate_90 = {(-1, 0): (0, 1), (1, 0): (0, -1), (0, 1): (1, 0), (0, -1): (-1, 0)}  # 시계 방향 90도 회전 시 벡터
 
-for start_x, start_y, d, num in dragon_input:
+for start_x, start_y, d, g in dragon_input:
     dragon = [[start_y, start_x], [start_y + direction[d][0], start_x + direction[d][1]]]  # 드래곤 커브 좌표 (0세대)
 
-    for _ in range(num):
+    for _ in range(g):
         i = len(dragon) - 1
 
         # 드래곤 커브 좌표 구하기
@@ -37,20 +37,9 @@ for start_x, start_y, d, num in dragon_input:
         grid[d_y][d_x] = True
 
 # 정사각형 개수 구하기
-r = [(0, 0), (0, 1), (1, 1), (1, 0)]  # 좌표
 result = 0
-
-for y in range(101):
-    for x in range(101):
-        count = 0
-
-        for r_y, r_x in r:
-            check_y = y + r_y
-            check_x = x + r_x
-            if 0 <= check_x < 101 and 0 <= check_y < 101 and grid[check_y][check_x]:
-                count += 1
-
-        if count == 4:
+for y in range(100):
+    for x in range(100):
+        if grid[y][x] and grid[y + 1][x] and grid[y][x + 1] and grid[y + 1][x + 1]:
             result += 1
-
 print(result)
