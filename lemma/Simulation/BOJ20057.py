@@ -1,4 +1,5 @@
 # 마법사 상어와 토네이도
+
 import copy
 import sys
 

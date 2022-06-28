@@ -1,4 +1,5 @@
 # 마법사 상어와 비바라기
+
 import sys
 
 N, M = map(int, sys.stdin.readline().split())  # NxN 격자 / M번의 이동
