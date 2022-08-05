@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # 2504 => hard...
 # 재귀함수로 간신히 구현
+=======
+# 2504
+>>>>>>> ff6ca0fca920a09cc250233198693a126e6da881
 from collections import deque
 line = input()
 shape = {

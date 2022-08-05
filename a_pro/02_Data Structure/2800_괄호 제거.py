@@ -42,4 +42,10 @@ for i in product(*lst):
                 level -= 1
 
 for i in sorted(res):
+<<<<<<< HEAD
     print(''.join(i))
+=======
+    for j in i:
+        print(j, end='')
+    print()
+>>>>>>> ff6ca0fca920a09cc250233198693a126e6da881
