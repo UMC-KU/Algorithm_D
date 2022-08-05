@@ -1,7 +1,7 @@
 # 링크와 스타트 -> 38%
 import sys
 from itertools import combinations
-from itertools import product
+
 # 팀과 표를 입력받아서 그 능력치를 반환하는 함수
 def team_str(lst, s):
     res = 0
@@ -18,9 +18,9 @@ for _ in range(n):
     s.append(list(map(int, sys.stdin.readline().split())))
 
 min_res = 100
-case = list(product(*((1, 0) for _ in range(n))))
+
 # 어차피 스타트, 링크팀으로 나눠지므로 절반의 경우만 시도해주면 됨.
-for i in case[:len(case)]:
+for i in len(combinations(range(n), n//2)):
     start = []
     link = []
     for index, j in enumerate(i):

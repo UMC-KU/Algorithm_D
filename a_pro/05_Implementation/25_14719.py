@@ -1,4 +1,4 @@
-# 미완
+# 미완 - **빗물
 import sys
 def rain(start):
     global blocks, w
