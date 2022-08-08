@@ -1,3 +1,4 @@
+# 구간 합 구하기
 import sys
 n, m = map(int, sys.stdin.readline().split())
 board = []
