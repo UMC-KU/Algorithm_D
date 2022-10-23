@@ -25,19 +25,6 @@
 | 10주차 | 2022.07.24 | Tree, Greedy |
 | 11주차 | 2022.07.31 | Dynamic Programming 1 |
 | 12주차 | 2022.08.14 | Dynamic Programming 1 |
-| 13주차 |  | Dynamic Programming 1, Backtracking |
-| 14주차 |  | Graph Traversal |
-| 15주차 |  | Dynamic Programming 2 |
-| 16주차 |  | Binary Search |
-| 17주차 |  | Divide and conquer |
-| 18주차 |  | Shortest Path |
-| 19주차 |  | Two Pointer |
-| 20주차 |  | Prefix Sum |
-| 21주차 |  | Topological Sorting |
-| 22주차 |  | Disjoint Set |
-| 23주차 |  | Minimum Spanning Tree(MST) |
-| 24주차 |  | Trie |
-| 25주차 |  | Dynamic Programming On Trees |
 
 
 
